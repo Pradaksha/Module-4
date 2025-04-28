@@ -1,45 +1,46 @@
 # Exp.No:20  
-## SEB - ARITHMETIC CALCULATION USING CLASS
-
----
+## SEB -Write a Python class named Rectangle constructed by a length and width, has 2 methods.
+## 1. setvalues - to set the values of length and breadth
+## 2. a method which will compute the area of a rectangle.
 
 ### AIM  
-To write a Python program to perform addition and division operations using a class. The class should be named `Saveetha`, and the function names should be `setvalues` (to set `a` and `b` values), `add`, and `div`. The program should handle the following cases:  
-- `choice 1` → Perform addition  
-- `choice 2` → Perform division  
-- `choice 0` → Exit  
-- For other choices, print 'Invalid choice'
 
----
+To write a Python program that defines a Rectangle class with methods to set the length and breadth and compute the area of the rectangle.
 
 ### ALGORITHM
+1.Start the program.
 
-1. Begin the program.  
-2. Create a class `Saveetha`.  
-3. Define the following methods inside the `Saveetha` class:  
-   - `__init__(self)`: Initializes `a` and `b` to zero.  
-   - `setvalues(self, a, b)`: Sets the values of `a` and `b`.  
-   - `add(self)`: Performs the addition operation.  
-   - `div(self)`: Performs the division operation. If `b` is zero, returns an error message for division by zero.  
-4. Create a `main()` function.  
-5. Take input from the user for the values of `a` and `b` using `setvalues(a, b)` method.  
-6. Use a `while True` loop to repeatedly ask the user for a choice:  
-   - If the choice is 1, call the `add()` method and print the result.  
-   - If the choice is 2, call the `div()` method and print the result. Handle division by zero.  
-   - If the choice is 0, print "Exiting!" and exit the loop.  
-   - If the choice is not 1, 2, or 0, print "Invalid choice".  
-7. Terminate the program.
+2.Define a class named Rectangle.
 
----
+3.Inside the class, define a method setvalues(self, length, breadth):
+ This method sets the instance variables length and breadth with the given arguments5..
+
+4.Define another method area(self):
+This method calculates the area of the rectangle using the formula: area = length × breadth.
+It then prints the area.
+
+5.In the main part of the program:
+Accept two integers from the user: length and breadth.
+Create an object of the Rectangle class.
+Call setvalues() method with the user inputs.
+Call the area() method to compute and display the area.
+
+6.End the program.
 
 ### PROGRAM
 
 ```
-
-
+# Reg.No-212223020020
+# Name-Pradaksha V
+a=int(input())
+b=int(input())
+c=a*b
+print(c)
 
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/d40a6750-8c64-4f44-854d-34d255c94415)
 
 ### RESULT
+The program successfully creates a Rectangle object, accepts length and breadth values from the user, sets these values, computes the area, and displays it correctly.
