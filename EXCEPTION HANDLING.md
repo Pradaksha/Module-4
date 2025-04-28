@@ -1,34 +1,37 @@
 # Exp.No:17  
-## EXCEPTION HANDLING
-
----
+## EXCEPTION HANDLING:Place msg="You can't add int to string" to the right place so that program avoids BaseExceptionError.You can use except Exception although normally you should be careful using such powerful exception statements.
 
 ### AIM  
-To create a Python program that prompts the user for a list of grades separated by commas, splits the string into individual grades, and uses exception handling to inform the user if the values they entered cannot be converted to integers.
-
----
+To handle the TypeError when attempting to add an integer to a string, and to print an appropriate error message instead of letting the program crash.
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Read a string `input_str` from the user using `input()`.  
-3. Split the input string using commas (`,`) to create a list of grades.  
-4. Use a `try` block to attempt converting each item in the grades list to an integer and store the result in `l1`.  
-5. If the conversion is successful, print the list `l1` containing the integer values.  
-6. If an error occurs during conversion (for example, if the input is not a valid number), catch the exception and print an error message: `"The grades you entered were in an invalid format."` along with the original grades list.  
-7. Terminate the program.
+1.Initialize a as a string ("Hello World!").
 
----
+2.Attempt to add an integer (10) to the string.
+
+3.If a TypeError occurs (since adding an integer to a string is not allowed), catch the exception.
+
+4.Print a user-friendly message: "You can't add int to string".
+
+5.End the program gracefully.
 
 ### PROGRAM
 
 ```
-Reg.No
-Name
-Add Your Code Here
-
+Reg.No:212223020020
+Name:Pradaksha V
+a="Hello World!"
+try:
+    a = a + 10
+    print(a)
+except TypeError:
+    print("You can't add int to string")
 ```
 
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/fcb96807-9681-4cf0-acc6-a2e295cc02a0)
+
 ### RESULT
+The program correctly catches the TypeError and prints the message: 'You can't add int to string', preventing the program from terminating unexpectedly.
